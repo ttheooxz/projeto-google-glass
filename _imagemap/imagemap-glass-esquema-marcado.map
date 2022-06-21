@@ -1,0 +1,13 @@
+<img src="[glass-esquema-marcado] (importada)" width="500" height="280" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:WIN10 -->
+<area shape="poly" coords="182,219,266,207,267,245,185,256" target="window" href="google-glass.html#tela" />
+<area shape="circle" coords="158,244,11" target="janela" href="google-glass.html#camera" />
+<area shape="poly" coords="26,143,82,216,83,251,27,169,27,143" target="janela" href="google-glass.html#sensores" />
+<area shape="circle" coords="76,51,11" target="janela" href="google-glass.html#bateria-gadgets" />
+</map>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tudo Sobre Google Glass</title>
+  <link href="_css/estilo.css" rel="stylesheet">
+  <link href="/_css/media.css" rel="stylesheet">
+  <script src="_javascript/funcoes.js"></script>
+</head>
+
+<body>
+  <div id="interface">
+
+    <header id="cabecalho">
+      <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+      </hgroup>
+
+      <figure>
+        <img id="icone" src="_imagens/glass-oculos-preto-med.png" />
+      </figure>
+
+      <nav id="menu" onmouseout="mudaIcone ('_imagens/multimidia.png')">
+        <h1>Menu Principal</h1>
+        <ul type="disc">
+          <li onmouseover="mudaIcone ('_imagens/home.png')"><a href="index.html">Home</a></li>
+          <li onmouseover="mudaIcone ('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+          <li onmouseover="mudaIcone ('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+          <li onmouseover="mudaIcone ('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+          <li onmouseover="mudaIcone ('_imagens/contato.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <section id="corpo-pag-completa">
+      <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+          <hgroup>
+            <h3>Glass > Multimídia</h3>
+            <h1>Sons e Vídeos</h1>
+            <h2>Por Gustavo Guanabara</h2>
+            <h4>Atualizado em 01/Maio/2013</h4>
+          </hgroup>
+        </header>
+
+
+          <div id="radio-tv">
+            <audio id="music" controls>
+              <source src="/_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+              <source src="/_media/2009-lovers-carvings-bibio.oggvorbis.ogg" type="audio/ogg">
+              <source src="/_media/2009-lovers-carvings-bibio.wav" type="x-wav">
+              <source src="/_media/2009-lovers-carvings-bibio.m4a" type="audio/x-acc">
+                O áudio não foi reproduzido, o navegador não é compatível.
+            </audio>
+              <video id="video" controls poster="/_imagens/video-mini03.jpg">
+              <source src="/_media/getting-started.mp4" type="video/mp4">
+              <source src="/_media/getting-started.webmsd.webm" type="video/webm">
+              <source src="/_media/getting-started.Ogg" type="video/ogg">
+                O vídeo não foi reproduzido, o navegador não é compatível. 
+              </video>
+          </div>
+      </article>
+    </section>
+
+    <footer id="rodape">
+
+      <p>Copyright 2013 - by Gustavo Guanabara</p>
+      <p><a href="https://pt-br.facebook.com/CursosEmVideo/" target="blank">Facebook</a> | <a
+          href="https://twitter.com/cursosemvideo" target="blank">Twitter</a></p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tudo Sobre Google Glass</title>
+  <link rel="stylesheet" href="_css/estilo.css">
+  <link rel="stylesheet" href="/_css/form.css">
+  <script src="_javascript/funcoes.js"></script>
+</head>
+
+<body>
+  <div id="interface">
+
+    <header id="cabecalho">
+      <hgroup>
+        <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+      </hgroup>
+
+      <figure>
+        <img id="icone" src="_imagens/glass-oculos-preto-med.png"/>
+      </figure>
+
+      <nav id="menu" onmouseout="mudaIcone ('_imagens/glass-oculos-preto-med.png')">
+        <h1>Menu Principal</h1>
+        <ul type="disc">   
+            <li onmouseover="mudaIcone ('_imagens/home.png')"><a href="index.html">Home</a></li>
+          <li onmouseover="mudaIcone ('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+          <li onmouseover="mudaIcone ('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+          <li onmouseover="mudaIcone ('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+          <li onmouseover="mudaIcone ('_imagens/contato.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+        <section id="corpo-pag-completa">
+          <article id="noticia-principal"> 
+            <header id="cabecalho-artigo">
+              <hgroup>
+                    <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                  <h2>Por Gustavo Guanabara</h2>
+                      <h4>Atualizado em 01/Maio/2013</h4>
+              </hgroup>
+            </header>
+
+          <!--Inserindo Formulários-->
+          <form method="POST" id="formContact" action="mailto:sj.danilo@outlook.com" oninput="calculoTotal ();">
+          <!--o atributo ACTION não vai funcionar nesse caso pois o e-mail não está configurado em cliente de e-mail no computador -->
+          <!--O melhor meio de resolver isso é utilizando uma  linguagem de programação especifíca como o PHP. Todos os dados recolhidos no formulário pode ser tratado e armazenado depois em um Banco de Dados.-->
+
+            <fieldset id="user">
+              <legend>Identificação do Usuário</legend>
+                  <p><label for="cName">Nome:</label> <input type="text" name="userName" id="cName" size="50" maxlength="40" placeholder="Nome Completo"></p>
+                  <p><label for="cPassword">Senha:</label> <input type="password" name="userPassword" id="cPassword" size="50" maxlength="40" placeholder="Digite sua Senha"></p>
+                  <p><label for="cEmail">E-mail:</label> <input type="email" name="userEmail" id="cEmail" size="50" maxlength="40" placeholder="Digite seu E-mail"></p>
+                    <fieldset id="gender">
+                      <legend>Genêro:</legend>
+                          <input type="radio" name="userGender" id="cBoy" ><label for="cBoy">Masculino</label><br>
+                          <input type="radio" name="userGender" id="cGirl"><label for="cGirl">Feminino</label><br> 
+                          <input type="radio" name="userGender" id="cOther"><label for="cOther">Outro</label><br>
+                    </fieldset>
+                  <p><label for="cBorn">Data de Nascimento: </label><input type="date" name="userBorn" id="cBorn" placeholder="Digite a data de seu Nascimento"></p>
+            </fieldset>
+            
+            <fieldset id="adress">
+              <legend>Endereço do Usuário</legend>
+                  <p><label for="cAdress">Endereço: <input type="text" name="userAdress" id="cAdress" size="50" maxlength="70" placeholder="Digite o seu Endereço. Ex: rua, bairro."></label></p>
+                  <p><label for="cNum">Número: <input type="number" name="adressNumber" id="cNum" min="0" max="99999" size="20" maxlength="45" placeholder="Número da sua casa"></label></p>
+                    <p><label for="cState">Estado: </label>
+                      <select name="adressState" id="cState">
+
+                        <optgroup label="Região Centro-Oeste">
+                          <option value="GO">Goiás</option>
+                          <option value="DF">Distrito Federal</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste"><option value="PE">Pernambuco</option></optgroup>
+                        <optgroup label="Região Norte"><option value="AM">Amazonas</option></optgroup>
+                        <optgroup label="Região Sudeste">
+                          <option selected value="SP">São Paulo</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                        </optgroup>
+                        <optgroup label="Região Sul"><option value="PR">Paraná</option></optgroup>
+                        
+                      </select>
+                    </p>
+                  <p><label for="cCity">Cidade: <input type="text
+                    " name="adressCity" id="cCity" size="50" maxlength="40" placeholder="Digite a cidade que você mora" list="listCity" ></label></p>
+                    <datalist id="listCity">
+                      <option value="Goiana"></option>
+                      <option value="Brasília"></option>
+                      <option value="Recife"></option>
+                      <option value="Manaus"></option>
+                      <option value="São Paulo"></option>
+                      <option value="Rio de Janeiro"></option>
+                      <option value="Curitiba"></option>
+                    </datalist>
+            </fieldset>
+            
+            <fieldset id="msg">
+              <legend>Mensagem do Usuário</legend>
+                  <p><label for="cUrgency">Grau de Urgência:</label> Mín <input type="range" name="degressUrgency" id="cUrgengy" min="0" max="10" step="2"> Máx</p>
+                  <p><label for="cMsg">Mensagem:</label><br>
+                    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                  </p>
+            </fieldset>
+            
+            <fieldset id="order">
+              <legend>Quero um Google Glass</legend>
+                  <p><input type="checkbox" name="orderGlass" id="cPed" checked>
+                    <label for="cPed">Gostaria de adquirir um Google Glass quando disponível </label></p>
+                  <p><label for="cColor">Cor: </label> <input type="color" value="#0000FF"></p>
+                  <p><label for="cQtd">Quantidade:</label> <input type="number" name="orderQtd" id="cQtd" min="0" max="5" value="0"></p>
+                  <p><label for="cTotal">Preço Total: US$ </label> <input type="text" name="orderTotal" id="cTotal" placeholder="Total a Pagar" readonly></p>
+                  <p id="obs">O preço foi definido como sendo de US$ 1500,00.</p>
+            </fieldset>
+
+            <!--Criação de Botões em Formulários, MÉTODO 1: <input type="submit" value="ENVIAR">-->
+            <!--Outro Método:-->
+            <input type="image" name="formBtn" id="btnSend" src="/_imagens/botao-enviar.png">
+
+          </form>
+
+        </article>
+    </section>
+
+<footer id="rodape">
+
+  <p>Copyright 2013 - by Gustavo Guanabara</p> 
+  <p><a href="https://pt-br.facebook.com/CursosEmVideo/" target="blank">Facebook</a> | <a href="https://twitter.com/cursosemvideo" target="blank">Twitter</a></p>
+</footer>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("/_fonts/Roboto-Regular.ttf");
+}   
+
+/*Formatando o Formulário*/
+form {
+  width: 700px;
+  margin: 0 auto;
+}
+
+p, input, textarea, optgroup, option, select, datalist {
+  font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+p#obs {
+  font-style: italic;
+  padding-left: 2px;
+}
+
+/*Definindo uma transparência para os campos de entrada*/
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+legend {
+  color: #606060;
+  font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+fieldset {
+  border-color: #cecece;
+  border-width: thin;
+  border-style: dashed;
+  margin: 15px
+}
+
+fieldset#gender {
+  width: 400px;
+}
+
+input {
+  border-radius: 3px;
+  border-width: thin;
+}
+optgroup {
+  font-style: italic;
+}
+
+input::placeholder {
+  font-family: inherit;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/*Configurando campo Mensagem*/
+textarea#cMsg {
+  margin: 10px 0 0 51px;
+}
+
+textarea::placeholder {
+  font-family: inherit;
+  font-style: italic;
+  font-size: 0.9em;
+}
+/*Fim da configuração do campo Mensagem*/
+
+/*Criando Estilo Hover no Input do Formulário*/
+input:hover, textarea:hover {
+  background-color: gainsboro;
+}
+
+/*Alinhando o Botão de ENVIAR*/
+input#btnSend {
+  margin-left: 300px;
+  
+}
+
+/*Inserindo Background dentro de cada parte do Formulário*/
+fieldset#user {
+  background-image: url(/_imagens/icone-contato.png);
+  background-position: 95% 85%;
+  background-repeat: no-repeat;
+}
+
+fieldset#adress {
+  background-image: url(/_imagens/icone-endereco.png);
+  background-position: 95% 85%;
+  background-repeat: no-repeat;
+}
+
+fieldset#msg {
+  background-image: url(/_imagens/icone-mensagem.png);
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+}
+
+fieldset#order {
+  background-image: url(/_imagens/icone-pagamento.png);
+  background-position: 100% 75%;
+  background-repeat: no-repeat;
+}
+
+/*Fim da Formatação do Formulário*/
+
+

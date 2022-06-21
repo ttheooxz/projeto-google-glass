@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/* Uma outra maneira de inserir fontes é importando elas de um repositório de fontes, como
+o Google Fonts, exemplo abaixo:*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+/*Primeira maneira é baixando o pacote de fontes para a pasta onde encontra-se os arquivos
+do projeto, guardar em uma pasta dedicada a essa função e inserir ela da maneira abaixo:*/
+@font-face {
+    font-family: "Fonte do Logo";
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url("../_fonts/Roboto-Regular.ttf");
+}   
+
+/*Estilizando o Corpo da Página*/
+body {
+    background-color: #dddddd;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 16px;
+}
+/*Corpo da Página concluído*/
+
+/*Estilizando a Interface*/
+div#interface {
+    background-color: #ffffff;
+    margin-top: -8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 40px;
+    width: 1100px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+/*Interface estilizada*/
+
+/*Estilizando Cabeçalho Principal, onde encontramos o menu de navegação e Logomarca*/
+header#cabecalho {
+    /*Inserção de linha divisória do fim do cabeçalho, ínicio do Corpo do Site*/
+    border-bottom: 1px #606060 solid;
+    /*Inserindo Logomarca Glass*/
+    background: url('../_imagens/glass-logo-peq.jpg')  no-repeat 0px 98px;
+    height: 160px;
+}
+/*Estilização do Cabeçalho Principal concluída*/
+
+/*Estilizando o Conteúdo do Cabeçalho Principal*/
+
+header#cabecalho h1 {
+    font-family: 'Fonte do Logo', sans-serif;
+    font-size: 3.25em;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4) ;
+    margin-top: -10px;
+    margin-bottom: 0px ;
+    padding: -22px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.25em;
+    color: #808080;
+    margin-top: 1px;
+    padding: 0px;
+}
+/*Fim do estilo do Conteúdo do Cabeçalho Principal*/ 
+
+
+/* Formatação do Menu */
+nav#menu {
+    display: flex;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -8px;
+    left: 625px;
+}
+
+nav#menu li {
+    display: inline;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 0.5px;
+    transition-duration: 1s;
+
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none ;
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+}
+
+nav#menu h1 {
+    display: none;
+}
+/* Fim da Formatação do Menu */
+
+/*Posicionando ícone que indentifica em que página o usuário se encontra, que fica abaixo do menu de navegação*/
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1035px;
+    top: 60px;
+}
+/*Fim do posicionamento do ícone que indentifica em que página o usuário se encontra. */
+
+/*Aplicando Estilo no Cabeçalho que indentifica ao usuário a sessão do site em que ele se escontra.*/
+header#cabecalho-artigo h1 {
+    font-family: 'Fonte do Logo', sans-serif;
+    font-size: 2.25em;
+    color: #606060;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 1.3em;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 1.200em;
+    color: #606060;
+}
+
+header#cabecalho-artigo h4 {
+    text-align: right;
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: lighter;
+}
+/*Fim do Estilo do Cabeçalho que indentifica ao usuário a sessão do site em que ele se escontra.*/
+
+
+/* Configurando as tags semânticas <section></section> e <article></article>*/
+section#corpo {
+    display: block;
+    width: 650px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 1.375em;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+/* Fim da Configuração das tags semânticas <section></section> e <article></article>*/
+/*Formatando o conteúdo em texto da página*/
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+/*Efeito de Transição com a pseudo-classe HOVER nos Links.*/
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formatação de Estilo para Imagens com Legendas */
+
+.foto-legenda {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 600px;
+}
+
+.foto-legenda img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 50%;
+}
+
+.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition-duration: 1s;
+}
+
+h3#legenda {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+    bottom: 45%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1em;
+}
+/* Fim da Formatação de Estilo para Imagens com Legendas */
+
+
+/*Efeito de Trasição da Imagem com Legenda*/
+.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+
+/*Formatando Tabelas */
+table#tabelaspecs {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspecs caption {
+    color: #888888;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+table#tabelaspecs caption span {
+    display: block;
+    font-size: 0.625em;
+    font-weight: lighter;
+    float: right;
+    color: #000000;
+    margin-top: 10px;
+}
+
+table#tabelaspecs td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabelaspecs td.colleft {
+    color: #ffffff;
+    background-color: #606060;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+
+table#tabelaspecs td.colright {
+    background-color: #cecece;
+    text-align: left ;
+}
+/*Fim do estilo aplicado a Tabela*/
+
+
+/*Configurando posicionamento do vídeo no fim da página*/
+video#video-article {
+    margin: 0 0 15px 80px;
+}
+
+/*Estilo do Aside e seu conteúdo, definido pela tag semântica <aside></aside>*/
+aside#lateral {
+    display: block;
+    width: 400px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+aside#lateral h1 {
+    font-family: 'Fonte do Logo', sans-serif;
+    font-size: 2.25em;
+    color: #606060;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 1.3em;
+    color: #ffffff;
+    padding:  10px;
+}
+
+video#video-aside {
+    margin: 9px 0 0 2px;
+}
+/*Fim do Estilo do Aside e seu conteúdo, definido pela tag semântica <aside></aside>*/
+
+/*Estilo do Rodapé do Site*/
+footer#rodape {
+    clear: both;
+    border-top: 1px #606060 solid;
+}
+
+footer#rodape p {
+    text-align: center;
+    font-style: italic;
+    padding-top: 18px;
+}
+/*Fim do Estilo de Rodapé do Site*/
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Tudo Sobre Google Glass</title>
+  <link rel="stylesheet" href="_css/estilo.css" >
+  <link rel="stylesheet" href="/_css/specs.css" >
+  <script src="_javascript/funcoes.js"></script>
+</head>
+
+<body>
+  <div id="interface">
+
+    <header id="cabecalho">
+      <hgroup>
+        <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+      </hgroup>
+
+      <figure>
+        <img id="icone" src="_imagens/especificacoes.png"/>
+      </figure>
+
+      <nav id="menu" onmouseout="mudaIcone ('_imagens/especificacoes.png')">
+        <h1>Menu Principal</h1>
+        <ul type="disc">   
+          <li onmouseover="mudaIcone ('_imagens/home.png')"><a href="index.html">Home</a></li>
+          <li onmouseover="mudaIcone ('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+          <li onmouseover="mudaIcone ('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+          <li onmouseover="mudaIcone ('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+          <li onmouseover="mudaIcone ('_imagens/contato.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+  <section id="corpo-pag-completa">
+    <article id="noticia-principal">
+      <header  id="cabecalho-artigo">
+      <hgroup>
+      <h3>Glass > &nbsp;Especificações</h3>
+      <h1>Um Raio-X do Google Glass</h1>
+      <h2>Por Gustavo Guanabara</h2>
+      <h4>Atualizado em 01/Maio/2013</h4>
+      </hgroup>
+      </header>
+      
+      <p>
+      Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+      </p>
+
+        <section id="conteudo">
+          <img id="img-raiox" src="/_imagens/glass-esquema-marcado.jpg" alt="Google Glass com seus componentes em destaque." usemap="#mymap">
+
+          <map name="mymap">
+            <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+            <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+            <!-- #$-:Please do not edit lines starting with "#$" -->
+            <area shape="poly" coords="182,219,266,207,267,245,185,256" target="janela" href="/google-glass.html#tela"/>
+            <area shape="circle" coords="158,244,11" target="janela" href="google-glass.html#camera" />
+            <area shape="poly" coords="26,143,82,216,83,251,27,169,27,143" target="janela" href="google-glass.html#sensores" />
+            <area shape="circle" coords="76,51,11" target="janela" href="google-glass.html#bateria-gadgets" />
+          </map>
+
+          <iframe src="/google-glass.html" name="janela" id="iframe-specs"></iframe>
+        </section>
+    </article>
+  </section>
+
+<footer id="rodape">
+
+  <p>Copyright 2013 - by Gustavo Guanabara</p> 
+  <p><a href="https://pt-br.facebook.com/CursosEmVideo/" target="blank">Facebook</a> | <a href="https://twitter.com/cursosemvideo" target="blank">Twitter</a></p>
+</footer>
+
+  </div>
+</body>
+
+</html>

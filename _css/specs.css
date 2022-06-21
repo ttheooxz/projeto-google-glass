@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+section#conteudo {
+  width: 1000px;
+  margin: auto;
+}
+
+img#img-raiox {
+  margin: auto;
+}
+
+iframe#iframe-specs {
+  margin-left: 45px;
+  width: 450px;
+  height: 325px;
+  border: none;
+}
+
+iframe#iframe-specs::-webkit-scrollbar {
+  display: none;
+}
+
